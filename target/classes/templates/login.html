@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>BENATTIK Amal</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+    
+</head>
+<body>
+
+<div class="container">
+	<div class="screen">
+		<div class="screen__content">
+			<form class="login" th:action="@{/login}" method="post">
+				<div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text" name="username" class="login__input" placeholder="User name / Email">
+				</div>
+				<div class="login__field">
+					<i class="login__icon fas fa-lock"></i>
+					<input type="password" name="password" class="login__input" placeholder="Password">
+				</div>
+				<button type="submit" class="button login__submit">
+					<span class="button__text">Log In Now</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>				
+			</form>
+			
+		</div>
+		<div class="screen__background">
+			<span class="screen__background__shape screen__background__shape4"></span>
+			<span class="screen__background__shape screen__background__shape3"></span>		
+			<span class="screen__background__shape screen__background__shape2"></span>
+			<span class="screen__background__shape screen__background__shape1"></span>
+		</div>		
+	</div>
+</div>
+<h1> This is my page </h1>
+<form th:action="@{/login}" method="post">
+	
+    <input class="login" type="text" placeholder="Username" id="username" name="username"/>
+    <input type="password" placeholder="Password" id="password" name="password"/>
+    <br>
+    <button type="submit">Login</button>
+   
+   
+</form>
+
+
+</body>
+    <footer>
+		 <div>
+        <label for="By me "></label>
+       
+    </div>
+	</footer>
+</html>
